@@ -18,5 +18,6 @@ public class TstsRunner {
         test.testFaktorial2();
         test.testPerkalian1();
         test.testPerkalian2();
+        test.akhiriTest();
     }
 }

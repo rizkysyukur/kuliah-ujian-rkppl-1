@@ -1,5 +1,8 @@
 import static junit.framework.Assert.assertTrue;
+import org.junit.After;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertSame;
 import org.junit.Before;
@@ -36,12 +39,12 @@ public class testing {
 
     @Test
     public void testFaktorial1() {
-        assertSame("Harusnya ", 24, s.faktorial(4));
+        assertEquals("Harusnya ", 24, s.faktorial(4));
     }
 
     @Test
     public void testFaktorial2() {
-        assertNotSame("Harusnya beda ", 30, s.faktorial(4));
+        assertNotEquals("Harusnya beda ", 30, s.faktorial(4));
     }
 
     @Test
@@ -54,4 +57,8 @@ public class testing {
         assertFalse("Harusnya false ", 2 == s.perkalian(2, 2));
     }
 
+    @After
+    public void akhiriTest() {
+        System.out.println("Testing diakhiri");
+    }
 }
