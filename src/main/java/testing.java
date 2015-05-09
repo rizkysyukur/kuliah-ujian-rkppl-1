@@ -1,3 +1,5 @@
+import static junit.framework.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertSame;
 import org.junit.Before;
@@ -31,7 +33,7 @@ public class testing {
     public void testPangkat2() {
         assertNotSame("Harusnya beda ", 2, s.pangkat(2, 2));
     }
-    
+
     @Test
     public void testFaktorial1() {
         assertSame("Harusnya ", 24, s.faktorial(4));
@@ -41,10 +43,15 @@ public class testing {
     public void testFaktorial2() {
         assertNotSame("Harusnya beda ", 30, s.faktorial(4));
     }
-    
-//    public static void main(String[] args) {
-//        Soal s = new Soal();
-//        System.out.println(s.faktorial(4));
-//    }
+
+    @Test
+    public void testPerkalian1() {
+        assertTrue("Harusnya true", 4 == s.perkalian(2, 2));
+    }
+
+    @Test
+    public void testPerkalian2() {
+        assertFalse("Harusnya false ", 2 == s.perkalian(2, 2));
+    }
 
 }

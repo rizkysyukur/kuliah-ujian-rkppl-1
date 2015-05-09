@@ -16,5 +16,7 @@ public class TstsRunner {
         test.testPangkat2();
         test.testFaktorial1();
         test.testFaktorial2();
+        test.testPerkalian1();
+        test.testPerkalian2();
     }
 }
