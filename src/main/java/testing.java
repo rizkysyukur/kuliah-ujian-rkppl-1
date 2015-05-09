@@ -31,5 +31,20 @@ public class testing {
     public void testPangkat2() {
         assertNotSame("Harusnya beda ", 2, s.pangkat(2, 2));
     }
+    
+    @Test
+    public void testFaktorial1() {
+        assertSame("Harusnya ", 24, s.faktorial(4));
+    }
+
+    @Test
+    public void testFaktorial2() {
+        assertNotSame("Harusnya beda ", 30, s.faktorial(4));
+    }
+    
+//    public static void main(String[] args) {
+//        Soal s = new Soal();
+//        System.out.println(s.faktorial(4));
+//    }
 
 }
